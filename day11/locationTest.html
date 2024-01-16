@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>사이트 이동</title>
+</head>
+<body>
+    <form name="form">
+        <label>
+            무신사
+            <input type="radio" name="site" value="musinsa">
+        </label>
+        <label>
+            쿠팡
+            <input type="radio" name="site" value="coupang">
+        </label>
+        <label>
+            배달의 민족
+            <input type="radio" name="site" value="delivery">
+        </label>
+        <button type="button" onclick="send()">이동</button>
+    </form>    
+</body>
+<script>
+    function send(){
+        let url;
+
+        if(!form.site.value){
+            alert("사이트를 선택해주세요");
+            return;
+        }
+
+        switch(form.site.value){
+            case "musinsa":
+                url = "https://www.musinsa.com";
+                break;
+            case "coupang":
+                url = "https://www.coupang.com/";
+                break;
+            case "delivery":
+                url = "https://ceo.baemin.com/";
+                break;    
+        }
+
+        location.href = url;
+    }
+</script>
+</html>

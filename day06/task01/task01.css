@@ -1,0 +1,27 @@
+body {
+    background: gray;
+}
+table {
+    width: 100%;
+    border: #333;
+    border-collapse: collapse;
+    margin: 0 auto;
+}
+td, th {
+    padding: 7px;
+    border: 1px solid black;
+    box-sizing: border-box;
+ }
+    th { 
+      color: #333;
+      background: pink;
+    }
+    td { 
+      background: white;
+      color: black;
+      text-align: center;
+    }
+
+    td.head {
+        background-color: yellow;
+    }

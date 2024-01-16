@@ -1,0 +1,21 @@
+body {
+    font-family: 'NanumBiSangCe';
+    font-weight: bold;
+}
+
+table {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+thead {
+    background-color: #fff9c4;
+}
+
+fieldset {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}

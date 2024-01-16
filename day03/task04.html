@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    var char = prompt("출력할 문자를 입력하세요");
+    var count = prompt("몇 번 출력하실?");
+
+    document.write("<h3>pr(<q>" + char + "</q>," + count +")</h3>");
+    document.write(`<input type='button' onclick='pr("` + char + `", ` + count +`, print)' value='결과 확인'`);
+
+    function pr(char, count, callback){
+        if(callback){
+            var result = "";
+            for(let i=0; i<count; i++){
+                result += char;
+            }
+            callback(result);
+        }
+    }
+
+    function print(result) {
+        document.write("<h4>결과 : " + result + "</h4>")
+    }
+</script>
+</html>

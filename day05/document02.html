@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>name 속성을 이용한 선택</h1>
+    <form name="joinForm">
+        <div>
+            <input type='text' name='id' placeholder="아이디">
+        </div>
+        <div>
+            <input type='password' name='pw' placeholder="비밀번호">    
+        </div>
+        <div>
+            <input type='checkbox' name='language' placeholder="java"> JAVA
+            <input type='checkbox' name='language' placeholder="c"> C
+            <input type='checkbox' name='language' placeholder="python"> Python
+        </div>
+    </form>
+</body>
+<script>
+    // const pw = document.getElementsByName("pw");
+    // console.log(pw[0]);
+    // form 태그에 name을 사용하면 따로 객체를 불러올 필요없이 바로 사용이 가능하다
+    // console.log(joinForm.pw);
+    // console.log(joinForm.id.value);
+    
+    const checkboxes = document.getElementsByName('language');
+    checkboxes.forEach(checkboxes => {
+        checkbox.checked = false;
+        console.log(checkbox.checked);
+    })
+</script>
+</html>
